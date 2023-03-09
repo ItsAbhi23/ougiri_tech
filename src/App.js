@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+// eslint-disable-next-line
+import Home from './screen/Home/Home'
+// eslint-disable-next-line
+import Event from './screen/Event/Event'
+import EventState from './context/EventState';
+import RegistrationPage from './screen/Registration/RegistrationPage'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+     <EventState>
+      {/* < Home/>
+      <Event /> */}
+      <RegistrationPage/>
+      </EventState>
+
+      </>
   );
 }
 
