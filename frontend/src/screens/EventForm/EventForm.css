@@ -1,0 +1,128 @@
+
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+
+.EventForm_bodyy{
+    background: url(../../images/party.jpg) no-repeat center center/cover;
+    
+    min-height: 100vh;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.EventForm_box{
+    position: absolute;
+    /* top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%); */
+    width: 40%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: 'Heebo', sans-serif;
+    padding:3px 10px;
+    border: 4px solid #0dcaf0;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+
+.EventForm_heading{
+    display: flex;
+    max-width: 55%;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: space-around;
+    font-size: larger;
+}
+.EventForm_heading>img{
+    max-width: 75px;
+    max-height: 75px;
+}
+.EventForm_heading>p{
+    margin: 0px 0px;
+}
+.EventForm_flexing{
+    display: flex;
+    justify-content: space-between;
+}
+.EventForm_flexing2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content:right;
+    /* margin-left: 30%; */
+}
+
+.EventForm_mbtn{
+    border: 2px solid white;
+    /* background-color:#0dcaf0; */
+    width: 100%;
+    text-align: center;
+    margin: 3px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .EventForm_box{
+        width: 95%;
+        height: 70%;
+    }
+    .EventForm_heading>p{
+        font-size: medium;
+    }
+    .EventForm_flexing{
+        flex-direction: column;
+    }
+    .EventForm_flexing>span{
+        margin: 3px 0px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:767px) {
+    .EventForm_box{
+        width: 90%;
+    }
+    .EventForm_flexing{
+        flex-direction: column;
+    }
+    .EventForm_heading>p{
+        font-size: large;
+    }
+    .EventForm_flexing>span{
+        margin: 3px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px)and (max-width:900px) {
+    .EventForm_box{
+        width: 55%;
+    }
+    .EventForm_flexing{
+        flex-direction: row;
+    }
+    .EventForm_flexing>span{
+        margin: 0px 0px;
+    }
+
+    .EventForm_heading>p{
+        font-size: larger;
+    }
+    .EventForm_heading{
+        flex-direction: row;
+    }
+
+
+}
+@media only screen and (min-width: 1200px) {
+    .EventForm_box{
+        width: 480px;
+    }
+}
